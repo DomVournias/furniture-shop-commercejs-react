@@ -89,8 +89,13 @@ const SidecartContainer = styled.div`
   z-index: 100;
   transition-duration: 300ms;
   transition: transform 0.3 ease-in-out;
-
   transform: ${(props) => props.transform};
+
+  //Glassmorphism effect
+  background: rgba(28, 32, 34, 0.35);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  box-shadow: 0 0 0 0.1rem rgba(000, 000, 000, 0.15);
 `;
 const ExitButton = styled.button`
   display: flex;
